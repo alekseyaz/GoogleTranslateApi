@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using System.Threading.Tasks;
 using Zaac.GoogleTranslate.Entities;
 
 namespace Zaac.GoogleTranslate
@@ -19,7 +20,7 @@ namespace Zaac.GoogleTranslate
         /// <param name="from">Source language</param>
         /// <param name="to">Target language</param>
         /// <returns></returns>
-        TranslationResult Translate(string text, string from, string to);
+        Task<TranslationResult> TranslateAsync(string text, string from, string to);
         /// <summary>
         /// To get all support target languages
         /// </summary>
