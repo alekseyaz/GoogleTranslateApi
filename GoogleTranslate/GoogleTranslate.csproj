@@ -1,0 +1,9 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <AssemblyName>Zaac.GoogleTranslate</AssemblyName>
+    <RootNamespace>Zaac..GoogleTranslate</RootNamespace>
+  </PropertyGroup>
+
+</Project>
