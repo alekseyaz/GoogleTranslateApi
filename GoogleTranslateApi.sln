@@ -10,7 +10,7 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "assets", "assets", "{61F36B34-2644-44FB-8089-C9FFEC493421}"
 	ProjectSection(SolutionItems) = preProject
 		.editorconfig = .editorconfig
-		LICENSE = LICENSE
+		LICENSE.md = LICENSE.md
 		NuGet.config = NuGet.config
 	EndProjectSection
 EndProject
