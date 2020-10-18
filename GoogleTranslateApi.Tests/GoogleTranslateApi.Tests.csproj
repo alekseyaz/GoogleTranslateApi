@@ -12,8 +12,9 @@
     <PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.5.0" />
   </ItemGroup>
 
-  <ItemGroup>
-    <ProjectReference Include="..\GoogleTranslate\GoogleTranslate.csproj" />
-  </ItemGroup>
 
+
+  <ItemGroup>
+    <ProjectReference Include="..\GoogleTranslateApi\GoogleTranslateApi.csproj" />
+  </ItemGroup>
 </Project>

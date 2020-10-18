@@ -1,0 +1,57 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <PackageId>GoogleTranslateApi</PackageId>
+    <Title>API Google Translate library</Title>
+    <Company>Zaac</Company>
+    <AssemblyName>Zaac.GoogleTranslateApi</AssemblyName>
+    <RootNamespace>Zaac.GoogleTranslateApi</RootNamespace>
+    <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
+    <Description>Library using google translate api to translate various texts from different languages</Description>
+    <Authors>Aleksey Zemskov</Authors>
+    <NeutralLanguage>en-US</NeutralLanguage>
+    <PackageTags>API Google Translate library</PackageTags>
+    <RepositoryUrl>https://github.com/alekseyaz/GoogleTranslateApi.git</RepositoryUrl>
+    <PackageProjectUrl>https://github.com/alekseyaz/GoogleTranslateApi</PackageProjectUrl>
+    <PackageLicenseUrl>https://github.com/alekseyaz/GoogleTranslateApi/blob/master/LICENSE</PackageLicenseUrl>
+    <PackageIcon>icon.png</PackageIcon>
+    <PackageLicenseFile></PackageLicenseFile>
+    <PackageIcon>icon.png</PackageIcon>
+    <IsPackable>true</IsPackable>
+    <FileVersion>1.0.0.0</FileVersion>
+    <Version>1.0.0</Version>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
+  </ItemGroup>
+
+  <PropertyGroup>
+    <ExcludeFromPackage>
+      GoogleTranslateApi/.fake/**/*;
+      GoogleTranslateApi/.ionide/**/*;
+      GoogleTranslateApi/.fable/**/*;
+      GoogleTranslateApi/node_modules/**/*;
+      GoogleTranslateApi/src/**/obj/**/*;
+      GoogleTranslateApi/src/**/bin/**/*;
+      GoogleTranslateApi/tests/**/obj/**/*;
+      GoogleTranslateApi/tests/**/bin/**/*;
+      GoogleTranslateApi/packages/**/*;
+      GoogleTranslateApi/paket-files/**/*;
+      GoogleTranslateApi/src/Client/deploy/**/*;
+      GoogleTranslateApi\**\bin\**;
+      GoogleTranslateApi\**\obj\**;
+    </ExcludeFromPackage>
+    <Product>Zaac.GoogleTranslateApi</Product>
+  </PropertyGroup>
+  
+  <ItemGroup>
+    <None Include="..\assets\icon.png">
+      <Pack>True</Pack>
+      <Visible>False</Visible>
+      <PackagePath></PackagePath>
+    </None>
+  </ItemGroup>
+
+</Project>

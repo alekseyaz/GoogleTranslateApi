@@ -1,9 +1,9 @@
 using NUnit.Framework;
 using System.Threading.Tasks;
-using Zaac.GoogleTranslate;
-using Zaac.GoogleTranslate.Entities;
+using Zaac.GoogleTranslateApi;
+using Zaac.GoogleTranslateApi.Entities;
 
-namespace GoogleTranslate.Tests
+namespace GoogleTranslateApi.Tests
 {
     public class GoogleTranslatorTest
     {
@@ -20,7 +20,7 @@ namespace GoogleTranslate.Tests
         {
             string sourceText = "TDD completely turned to traditional development.";
             TranslationResult transResult = await _googleTranslator.TranslateAsync(sourceText, "en", "ru");
-            Assert.AreEqual("TDD полностью превратился в традиционную разработку.", transResult.TargetText);
+            Assert.AreEqual("TDD РїРѕР»РЅРѕСЃС‚СЊСЋ РїСЂРµРІСЂР°С‚РёР»СЃСЏ РІ С‚СЂР°РґРёС†РёРѕРЅРЅСѓСЋ СЂР°Р·СЂР°Р±РѕС‚РєСѓ.", transResult.TargetText);
 
             sourceText = "How are you doing today?";
             transResult = await _googleTranslator.TranslateAsync(sourceText, "ru", "en");
@@ -28,20 +28,20 @@ namespace GoogleTranslate.Tests
 
             sourceText = "hello\"";
             transResult = await _googleTranslator.TranslateAsync(sourceText, "en", "ru");
-            Assert.AreEqual("Здравствуйте\"", transResult.TargetText);
+            Assert.AreEqual("Р—РґСЂР°РІСЃС‚РІСѓР№С‚Рµ\"", transResult.TargetText);
 
             sourceText = "hello";
             transResult = await _googleTranslator.TranslateAsync(sourceText, "en", "ru");
-            Assert.AreEqual("Здравствуйте", transResult.TargetText);
+            Assert.AreEqual("Р—РґСЂР°РІСЃС‚РІСѓР№С‚Рµ", transResult.TargetText);
 
             sourceText = "It's a very small project and may be fairly self explanatory if you are familiar with Visual Studio editor extensions. There are two components to the extension:";
             transResult = await _googleTranslator.TranslateAsync(sourceText, "en", "ru");
-            Assert.AreEqual("Это очень небольшой проект, и он может быть достаточно понятным, если вы знакомы с расширениями редактора Visual Studio. Расширение состоит из двух компонентов:", transResult.TargetText);
+            Assert.AreEqual("Р­С‚Рѕ РѕС‡РµРЅСЊ РЅРµР±РѕР»СЊС€РѕР№ РїСЂРѕРµРєС‚, Рё РѕРЅ РјРѕР¶РµС‚ Р±С‹С‚СЊ РґРѕСЃС‚Р°С‚РѕС‡РЅРѕ РїРѕРЅСЏС‚РЅС‹Рј, РµСЃР»Рё РІС‹ Р·РЅР°РєРѕРјС‹ СЃ СЂР°СЃС€РёСЂРµРЅРёСЏРјРё СЂРµРґР°РєС‚РѕСЂР° Visual Studio. Р Р°СЃС€РёСЂРµРЅРёРµ СЃРѕСЃС‚РѕРёС‚ РёР· РґРІСѓС… РєРѕРјРїРѕРЅРµРЅС‚РѕРІ:", transResult.TargetText);
 
 
             sourceText = "<result>";
             transResult = await _googleTranslator.TranslateAsync(sourceText, "en", "ru");
-            Assert.AreEqual("<результат>", transResult.TargetText);
+            Assert.AreEqual("<СЂРµР·СѓР»СЊС‚Р°С‚>", transResult.TargetText);
         }
     }
 }
