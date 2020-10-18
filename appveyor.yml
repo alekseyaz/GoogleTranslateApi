@@ -34,7 +34,7 @@ for:
       branch: /^(master|dev)$/
   - provider: GitHub
     auth_token:
-      secure: SJhGDlty7WNVlwbZUrcn7YGjQdvkcEDqbXcqpBYPLb1iS1gaOhQSHhzeUZKJ/wJz
+      secure: 1IP3G6W3s4cFhdnrDrAmswaeIw1GPweuGRyUea1gfnWVFVdw1mNOX1g59DBcNbm2
     artifacts:
       /GoogleTranslateApi.*\.nupkg/
     tag: v$(assembly_version)
